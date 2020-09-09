@@ -16,3 +16,17 @@
    - This allows a more efficiant utilization for this program. We conclude that the programs that just ran I/O might be I/O intensive and likely to launch a new I/O task soon.
 8. Now run with some randomly generated processes: `-s 1 -l 3:50,3:50` or `-s 2 -l 3:50,3:50` or `-s 3 -l 3:50,3:50`. See if you can predict how the trace will turn out. What happens when you use the flag `-I IO_RUN_IMMEDIATE` vs. ` -I IO_RUN_LATER`? What happens when you use `-S SWITCH_ON_IO`vs.`-S SWITCH_ON_END`?
    - I observe that the `-I` changes nothing, but `-S SWITCH_ON_END` is meaningfully less officiant then `-S SWITCH_ON_IO`.
+
+## Class discussion
+
+- People like the text book.
+- Godel, Escher, Back (nice plot for a textbook)
+- IO\\\_run\\\_immediate and IO\\\_run\\\_later.
+- Process vs program
+  - program is just instructions
+  - independent API
+  - A process is an abstraction
+  - Only a process has a stack and a heap
+- Demonstrations
+  - Demo `ps`.
+  - `/proc` as a descriptor of processes for Linux.
